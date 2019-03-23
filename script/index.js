@@ -63,20 +63,20 @@ function equipWeapon(newEntry) {
 }
 
 //tried to make it a pop up box but didnt work i could just innerhtml it to main but then the whole game disappears
-function displayStats() {
-    //getting some basic locations here
-    const ds = document.getElementById("ds");
-    const displaySetting = document.getElementById("displaySetting");
+// function displayStats() {
+//     //getting some basic locations here
+//     const ds = document.getElementById("ds");
+//     const displaySetting = document.getElementById("displaySetting");
 
-    //if class equals hide remove class and show info in the hidden div
-    if (ds.className === 'hide') {
-        displaySetting.classList.remove("hide");
-        displaySetting.innerText = `Name: ${hero.name} Health: ${hero.health} Weapon: ${hero.weapon.type} Damage${hero.weapon.damage}`;
-    } else {
-        //else hide it
-        displaySetting.classList.add("hide");
-    }
-}
+//     //if class equals hide remove class and show info in the hidden div
+//     if (ds.className === 'hide') {
+//         displaySetting.classList.remove("hide");
+//         displaySetting.innerText = `Name: ${hero.name} Health: ${hero.health} Weapon: ${hero.weapon.type} Damage${hero.weapon.damage}`;
+//     } else {
+//         //else hide it
+//         displaySetting.classList.add("hide");
+//     }
+// }
 //attack function
 function attack() {
     //decreasing health when attacked
@@ -84,15 +84,16 @@ function attack() {
     hero.health = hero.health - ghost.weapon.damage;
 
     //tried to add function that flashes when hit
-    setTimeout(() => {
-        document.getElementById("ghost").style.color = red;
-    }, 1000);
+    // setTimeout(() => {
+    //     document.getElementById("ghost").style.color = red;
+    // }, 1000);
 
     //if ghost is dead disappear
     if (ghost.health === 0) {
         document.getElementById("ghost").classList.add("hide");
         alert("DAMN he dead")
         alert("Congratulations! you won(i guess)");
+        return;
     }
     alert("Ouch")
 }
