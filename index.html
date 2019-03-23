@@ -6,17 +6,18 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./style/main.css">
-    <link rel="stylesheet" type="text/css" href="./style/index.css">
+    
 </head>
 <body>
-    <main id="main">
+    <main>
+        <img id="ghost" src="./image/scaryGhost.png" onclick="attack()" class="hide">
         <div class="options">
             <img id="ds" src="./image/Ds.png" onclick="displayStats()">
             <img id="inn" src="./image/rest.png" onclick="rest(hero)">
         </div>
+        
         <img id="axe" src="./image/axe.png" onclick="pickUpItem(hero, axe)">
-        <img id="bag" src="./image/bag.png" onclick="equipWeapon(hero)">
-        <img id="attack" class="hide" src="./image/axe.png" onclick="">
+        <img id="bag" class="hide" src="./image/bag.png" onclick="equipWeapon(hero)">
     </main>
     <footer></footer>
     <script src="./script/index.js"></script>

@@ -7,6 +7,14 @@ img {
     height: 50px;
 }
 
+#ghost {
+    width: 400px;
+    height: 798px;
+    left: 50%;
+    bottom: -50px;
+    position: absolute;
+}
+
 #ds {
     position: fixed;
     left: 5px;
@@ -45,7 +53,7 @@ img {
     padding: 2px;
 }
 
-.hide {
+.hide{
     display: none;
 }
 
