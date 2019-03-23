@@ -10,10 +10,13 @@
 </head>
 <body>
     <main id="main">
-        <img id="ds" src="./image/Ds.png" onclick="displayStats()">
-        <img id="inn" src="./image/rest.png" onclick="rest(hero)">
+        <div class="options">
+            <img id="ds" src="./image/Ds.png" onclick="displayStats()">
+            <img id="inn" src="./image/rest.png" onclick="rest(hero)">
+        </div>
         <img id="axe" src="./image/axe.png" onclick="pickUpItem(hero, axe)">
         <img id="bag" src="./image/bag.png" onclick="equipWeapon(hero)">
+        <img id="attack" class="hide" src="./image/axe.png" onclick="">
     </main>
     <footer></footer>
     <script src="./script/index.js"></script>

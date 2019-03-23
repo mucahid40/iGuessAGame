@@ -5,7 +5,7 @@ let hero = {
     health: 10,
     weapon: {
         type: "hands",
-        damage: 1,
+        damage: 0,
     },
 };
 

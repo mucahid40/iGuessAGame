@@ -11,10 +11,45 @@ img {
     position: fixed;
     left: 5px;
     top: 15px;
+    background-color: sienna;
+    border: solid black 1px;
+    padding: 2px;
 }
 
 #inn {
     position: fixed;
     left: 5px;
-    top: 70px;
+    top: 80px;
+    background-color: sienna;
+    border: solid black 1px;
+    padding: 2px;
+}
+
+#axe {
+    position:absolute;
+    top: 50%;
+    margin-top: -25px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: sienna;
+    border: solid black 1px;
+    padding: 2px;
+}
+
+#bag {
+    position: fixed;
+    bottom: 15px;
+    right: 5px;
+    background-color: sienna;
+    border: solid black 1px;
+    padding: 2px;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    background-image: url(../image/4821965531_d3259a73e3_b.jpg);
+    background-size: cover; 
 }
