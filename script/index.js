@@ -20,9 +20,9 @@ function rest(whathero) {
 }
 
 //weapon object
-const axe = {
-    type: "axe",
-    damage: 5,
+const dagger = {
+    type: "dagger",
+    damage: 2,
 }
 
 //enemy object
@@ -36,9 +36,9 @@ const ghost = {
 }
 
 function pickUpItem(whathero, newWeapon) {
-    //pushing weapon to the front of inventory array
+    //pushing weapon to the end of inventory array
     whathero.inventory.push(newWeapon);
-    const thatweapon = document.getElementById("axe");
+    const thatweapon = document.getElementById("dagger");
     //hiding weapon after picking up to not confuse player
     thatweapon.classList.add("hide");
     //showing bag image
